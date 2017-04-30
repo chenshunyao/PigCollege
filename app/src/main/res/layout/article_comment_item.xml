@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.xnf.henghenghui.ui.view.RoundImageView
+            android:id="@+id/comment_icon"
+            android:layout_width="42.4dp"
+            android:layout_height="42.4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shouyi2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/comment_icon"
+                android:layout_marginTop="5dp"
+                android:textSize="16.8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#4289f3"
+                android:text="小凯"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/comment_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:textSize="14.4dp"
+                    android:textColor="#a3a3a3"
+                    android:text="海南养户"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignTop="@id/comment_name"
+                    android:textSize="14.4dp"
+                    android:textColor="#a3a3a3"
+                    android:text="17小时前"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="47.4dp"
+        android:layout_marginRight="12dp"
+        android:paddingRight="12dp"
+        android:textSize="16dp"
+        android:textColor="#636363"
+        android:layout_marginBottom="10dp"
+        android:text="讲得太好了，对我有很大的帮助，以前的很多盲区，都发现了！感谢！"/>
+</LinearLayout>

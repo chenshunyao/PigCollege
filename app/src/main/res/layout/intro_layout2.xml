@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#222222">
+
+    <com.xnf.henghenghui.ui.appintro.AppIntroViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </com.xnf.henghenghui.ui.appintro.AppIntroViewPager>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:minWidth="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_margin="8dp"
+        android:id="@+id/skip"
+        style="?attr/borderlessButtonStyle"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="top|right"
+        android:text="@string/skip_button" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:paddingTop="10dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:background="#00000000"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <FrameLayout
+                android:id="@+id/indicator_container"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/next"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:minWidth="100dp"
+                android:layout_marginRight="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/gray_back_o" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/course_buy_normal"
+        style="?attr/borderlessButtonStyle"
+        android:visibility="visible"
+        android:id="@+id/done"
+        android:textColor="#228B22"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="70dp"
+        android:minWidth="100dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="@string/done_button" />
+
+</FrameLayout>

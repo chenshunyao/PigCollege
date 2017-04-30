@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include
+        android:id="@+id/meeting_comment_title"
+        layout="@layout/meeting_title_layout"/>
+    <ListView
+        android:id="@+id/meeting_comment_list"
+        android:layout_below="@id/meeting_comment_title"
+        android:layout_above="@+id/meeting_comment_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/meeting_comment_send"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/course_detail_comment_height"
+        android:background="@drawable/course_detail_comment_bg"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/meeting_comment_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/course_detail_comment_edit_height"
+            android:layout_weight="6"
+            android:background="@drawable/editsharp"
+            android:layout_marginLeft="@dimen/course_detail_comment_edit_leftmargin"
+            android:textColorHint="#A3A3A3"
+            android:textSize="14.4sp"
+            android:paddingLeft="5dp"
+            android:hint="@string/comment_hint"/>
+        <Button
+            android:id="@+id/meeting_comment_add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/course_detail_comment_btnheight"
+            android:layout_marginLeft="@dimen/course_detail_comment_edit_rightmargin"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_comment_bg"
+            android:textColor="#FFFFFF"
+            android:text="@string/comment"/>
+    </LinearLayout>
+</RelativeLayout>

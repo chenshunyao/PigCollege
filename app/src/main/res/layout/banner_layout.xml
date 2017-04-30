@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/banner_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.xnf.henghenghui.ui.view.BannerViewPager android:id="@+id/viewpager" android:background="@drawable/hot_default_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@+id/radio_relayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_radio" android:layout_alignBottom="@id/viewpager">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/radio_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--<LinearLayout android:orientation="horizontal" android:id="@+id/activity_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_subject" android:layout_below="@id/banner_layout">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/subject1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/sub1_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:src="@drawable/subject1_click_bg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="@color/gray_E0E0E0" android:layout_width="@dimen/dimen_point" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_15dp" android:layout_marginBottom="@dimen/dimen_15dp" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/subject2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@+id/sub2_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_10dp" android:src="@drawable/subject2_click_bg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="@color/gray_E0E0E0" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_point" android:layout_below="@id/activity_layout" />
+    <TextView android:id="@+id/hot_article" android:layout_below="@id/line" android:paddingLeft="@dimen/dimen_16dp" android:paddingTop="@dimen/dimen_16dp" android:paddingBottom="@dimen/dimen_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hotarticle" android:layout_alignParentLeft="true" style="@style/text_gray_808080_14sp_style" />-->
+</RelativeLayout>

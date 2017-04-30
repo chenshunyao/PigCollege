@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/layout_title" />
+
+    <!--RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/edit_baike_list_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_title_edit"
+            android:gravity="left|center_vertical"
+            android:hint="请输入关键词搜索"
+            android:paddingRight="30dp"
+            android:imeOptions="actionSearch"
+            android:maxLength="100"
+            android:singleLine="true"
+            android:textColor="@color/text_color_black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_baike_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/search_icon" />
+    </RelativeLayout-->
+
+    <!--com.xnf.henghenghui.ui.widget.AutoLineGroup
+        android:id="@+id/layout_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray_808080"
+            android:text="热门搜索"/>
+    </com.xnf.henghenghui.ui.widget.AutoLineGroup-->
+
+    <!--View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_E0E0E0"/-->
+
+    <com.xnf.henghenghui.ui.view.PagerSlidingTabStrip
+        android:id="@+id/pager_tabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa">
+    </com.xnf.henghenghui.ui.view.PagerSlidingTabStrip>
+
+    <View
+        android:id="@+id/view_pager_line"
+        android:layout_width="match_parent"
+        android:layout_below="@id/pager_tabstrip"
+        android:layout_height="1px"
+        android:background="#E7E7E7" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_pager_line">
+    </android.support.v4.view.ViewPager>
+
+    <com.xnf.henghenghui.ui.view.EmptyLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

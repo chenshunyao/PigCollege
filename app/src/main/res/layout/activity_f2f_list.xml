@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xnf.henghenghui.ui.activities.F2FListActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+    <com.xnf.henghenghui.ui.view.PullListView
+        android:id="@+id/topics_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@color/transparent"
+        android:dividerHeight="1px"
+        android:fastScrollAlwaysVisible="false"
+        app:getMoreType="click"
+        android:fastScrollEnabled="false" />
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <com.xnf.henghenghui.ui.view.EmptyLayout
+            android:id="@+id/error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:src="@drawable/empty_img"/>
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="@string/f2f_empty_list_hint"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

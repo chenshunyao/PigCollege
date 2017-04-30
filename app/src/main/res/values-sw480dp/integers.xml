@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="main_radio_btn_width">88</integer>
+    <integer name="main_radio_btn_height">77</integer>
+</resources>

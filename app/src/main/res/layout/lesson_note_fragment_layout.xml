@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include
+        android:id="@+id/lessonnote_title"
+        layout="@layout/meeting_title_layout"/>
+    <ListView
+        android:id="@+id/lessonnote_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:layout_below="@id/lessonnote_title"/>
+    <LinearLayout
+        android:id="@+id/lesson_note_extend"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/btn_more_bg"
+        android:orientation="horizontal"
+        android:layout_below="@id/lessonnote_list"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hot_course_more_width"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="@string/course_desc_expend"/>
+        <ImageView
+            android:id="@+id/lessonnote_expend_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/course_expert_expend"/>
+        <ImageView
+            android:id="@+id/lessonnote_shrinkup_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/course_expert_shrinkup"/>
+    </LinearLayout>
+</RelativeLayout>

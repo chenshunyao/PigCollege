@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <TextView
+        android:id="@+id/more_collect_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/liveroom_more_item_bg"
+        style="@style/dialog_content_text"
+        android:textSize="20sp"
+        android:text="收藏"/>
+    <TextView
+        android:id="@+id/more_share_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liveroom_more_item_bg"
+        style="@style/dialog_content_text"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="分享"/>
+    <TextView
+        android:id="@+id/more_cancel_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liveroom_cancel_bg"
+        style="@style/dialog_content_text"
+        android:layout_marginBottom="@dimen/space_8"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="取消"/>
+</LinearLayout>

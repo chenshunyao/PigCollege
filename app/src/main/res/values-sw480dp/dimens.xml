@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="index_page_banner_height">242.0dip</dimen>
+    <dimen name="media_center_banner_height">240.0dip</dimen>
+
+    <dimen name="banner_height1">210dp</dimen>
+    <dimen name="banner_height2">210dp</dimen>
+    <dimen name="layout_zhuanti_left">12dp</dimen>
+</resources>

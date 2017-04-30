@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hot_course_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+    <Button
+        android:id="@+id/hot_course_more"
+        android:layout_width="@dimen/hot_course_more_width"
+        android:layout_height="@dimen/hot_course_horizontal_height"
+        android:background="@drawable/btn_more_bg"
+        android:textStyle="normal"
+        android:textColor="#4B4B4B"
+        android:textSize="14sp"
+        android:text="@string/hot_more" />
+</RelativeLayout>

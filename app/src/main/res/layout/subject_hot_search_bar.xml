@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_top_searchbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.8"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edit_qa_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_title_edit"
+                android:gravity="center_vertical|left"
+                android:imeOptions="actionSearch"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/edit_qa_search_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="请输入关键词搜索"
+                android:textColor="@color/text_hint_color"
+                android:textSize="15dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:visibility="visible"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/search_icon"/>
+    </FrameLayout>
+
+</LinearLayout>

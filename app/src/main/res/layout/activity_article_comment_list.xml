@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/comment_title_layout"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/driver1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment_title_layout"
+        android:orientation="vertical">
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8c8c8"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#e6e6e6"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c8c8c8"/>
+    </LinearLayout>
+
+    <com.xnf.henghenghui.ui.view.PullListView
+        android:id="@+id/course_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/driver1"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@color/transparent"
+        android:dividerHeight="1px"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false" />
+
+    <LinearLayout
+        android:id="@+id/meeting_comment_send"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/course_detail_comment_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/course_detail_comment_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/meeting_comment_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/course_detail_comment_edit_height"
+            android:layout_marginLeft="@dimen/course_detail_comment_edit_leftmargin"
+            android:layout_weight="7"
+            android:background="@drawable/editsharp"
+            android:hint="@string/comment_hint" />
+
+        <Button
+            android:id="@+id/meeting_comment_add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/course_detail_comment_btnheight"
+            android:layout_marginLeft="@dimen/course_detail_comment_edit_rightmargin"
+            android:layout_weight="1"
+            android:background="@drawable/btn_comment_bg"
+            android:textColor="@color/white"
+            android:text="@string/comment" />
+    </LinearLayout>
+</RelativeLayout>

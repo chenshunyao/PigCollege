@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include
+        android:id="@+id/meeting_title"
+        layout="@layout/meeting_title_layout"/>
+    <!-- android:paddingLeft="10dp" -->
+    <ListView
+        android:id="@+id/meeting_live_room"
+        android:layout_below="@id/meeting_title"
+        android:layout_above="@+id/meeting_liveroom_extend"
+        android:background="#e6e6e6"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:divider="#e6e6e6"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/meeting_liveroom_extend"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/meeting_live_extend_height"
+        android:background="@drawable/btn_more_bg"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="@string/course_desc_expend"/>
+        <ImageView
+            android:id="@+id/liveroom_expend_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/course_expert_expend"/>
+        <ImageView
+            android:id="@+id/liveroom_shrinkup_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/course_expert_shrinkup"/>
+    </LinearLayout>
+</RelativeLayout>

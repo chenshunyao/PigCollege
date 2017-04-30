@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:MyRadioButton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_search_bar"></include>
+        <include layout="@layout/top_setting_bar"></include>
+
+        <LinearLayout
+            android:id="@+id/main_middle_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1028"
+            android:background="#ffffff"
+            android:orientation="vertical"></LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/main_bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:background="@drawable/bottom_bar_background"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:orientation="horizontal">
+
+            <com.xnf.henghenghui.ui.view.MyRadioButton
+                android:id="@+id/tab_1"
+                style="@style/main_tab_style"
+                MyRadioButton:drawableTop="@drawable/icon_tab_main"
+                MyRadioButton:imgWidth= "27dp"
+                MyRadioButton:imgHeight = "23dp"
+                android:text="@string/tab_main" />
+
+            <com.xnf.henghenghui.ui.view.MyRadioButton
+                android:id="@+id/tab_2"
+                style="@style/main_tab_style"
+                MyRadioButton:drawableTop="@drawable/icon_tab_course"
+                MyRadioButton:imgWidth= "27dp"
+                MyRadioButton:imgHeight = "23dp"
+                android:text="@string/tab_course" />
+
+            <com.xnf.henghenghui.ui.view.MyRadioButton
+                android:id="@+id/tab_3"
+                style="@style/main_tab_style"
+                MyRadioButton:drawableTop="@drawable/icon_tab_f2f"
+                MyRadioButton:imgWidth= "27dp"
+                MyRadioButton:imgHeight = "23dp"
+                android:text="@string/tab_f2f" />
+
+            <com.xnf.henghenghui.ui.view.MyRadioButton
+                android:id="@+id/tab_4"
+                style="@style/main_tab_style"
+                MyRadioButton:drawableTop="@drawable/icon_tab_me"
+                MyRadioButton:imgWidth= "27dp"
+                MyRadioButton:imgHeight = "23dp"
+                android:text="@string/tab_me" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top|right">
+
+                <TextView
+                    android:id="@+id/tab_1_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/new_msg_icon"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tab_2_n"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/tab_4_n"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top|right">
+
+                <TextView
+                    android:id="@+id/tab_3_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="2dp"
+                    android:drawableTop="@drawable/new_msg_icon_small"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/course_comment_item_height"
+    android:layout_gravity="center" android:gravity="center">
+    <ImageView
+        android:id="@+id/meeting_comment_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_sex_male"/>
+    <TextView
+        android:id="@+id/meeting_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/meeting_comment_icon"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="小凯"/>
+    <TextView
+        android:id="@+id/meeting_comment_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/meeting_comment_name"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@id/meeting_comment_name"
+        android:textSize="12sp"
+        android:text="海南养户"/>
+    <TextView
+        android:id="@+id/meeting_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/meeting_comment_icon"
+        android:layout_below="@id/meeting_comment_name"
+        android:layout_marginTop="6sp"
+        android:layout_marginLeft="5sp"
+        android:textSize="14sp"
+        android:text="讲得太好了，对我有很大的帮助，以前的很多盲区，都发现了！感谢！"/>
+</RelativeLayout>

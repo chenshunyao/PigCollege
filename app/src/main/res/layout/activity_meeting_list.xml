@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_title" />
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">-->
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">-->
+    <ListView
+        android:id="@+id/meeting_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/pure"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"/>
+            <!--<LinearLayout
+                android:id="@+id/meeting_more_layout"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#E6E6E6"
+                android:layout_below="@id/meeting_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hot_course_more_width"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:background="@drawable/btn_more_bg"
+                    android:text="@string/more"/>
+            </LinearLayout>-->
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

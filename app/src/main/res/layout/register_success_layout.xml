@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/register_success_layout"
+    android:visibility="gone"
+    android:background="@color/pure"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/register_ok"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册成功"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="18.4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <Button
+            android:id="@+id/btn_goto_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_successed_login"
+            android:text="返回登录"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/btn_implement_persionalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_successed_implement_info"
+            android:text="完善资料"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

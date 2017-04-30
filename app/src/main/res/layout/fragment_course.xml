@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.xnf.henghenghui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:splitMotionEvents="false">
+
+            <!--<com.xnf.henghenghui.ui.view.HotViewPager
+                android:id="@+id/course_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp">
+
+                <com.xnf.henghenghui.ui.view.ChildViewPager
+                    android:id="@+id/course_ad_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/course_ad_indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    app:fillColor="#FF3DFFEA"
+                    app:pageColor="#FFFFFFFF"
+                    app:radius="3dp"
+                    app:strokeColor="#FF3DFFEA"
+                    app:strokeWidth="0dp" />
+
+            </RelativeLayout>
+            <!-- 热门推荐  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hot_course_more_width"
+                android:background="#E6E6E6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/course_line_label_width"
+                    android:layout_height="@dimen/course_line_label_height"
+                    android:layout_marginLeft="@dimen/course_line_label_marginleft"
+                    android:layout_marginRight="@dimen/course_line_label_marginright"
+                    android:src="@drawable/course_line_label" />
+
+                <TextView
+                    android:id="@+id/hot_course_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/course_hot"
+                    android:textColor="#6e6e6e"
+                    android:textSize="@dimen/course_title_spsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hot_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/course_margin_top"
+                android:layout_marginTop="@dimen/course_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/course_hot_left_fling"
+                    android:layout_width="@dimen/course_hot_left_fling_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/course_hot_left" />
+
+                <com.xnf.henghenghui.ui.view.ChildRecyclerView
+                    android:id="@+id/hot_course_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hot_course_horizontal_height"
+                    android:layout_gravity="center"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+
+                <!--<Button
+                    android:id="@+id/hot_course_more"
+                    android:layout_width="@dimen/hot_course_more_width"
+                    android:layout_height="@dimen/hot_course_horizontal_height"
+                    android:background="@drawable/btn_more_bg"
+                    android:text="@string/hot_more" />-->
+            </LinearLayout>
+            <!-- 养猪学院 -->
+            <com.xnf.henghenghui.ui.view.MyGridView
+                android:id="@+id/free_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- 原创视频 -->
+            <com.xnf.henghenghui.ui.view.MyGridView
+                android:id="@+id/discount_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

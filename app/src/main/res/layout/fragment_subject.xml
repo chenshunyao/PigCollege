@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- custom title-->
+<com.xnf.henghenghui.ui.view.CustomTopBar
+    android:id="@+id/custom_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    custom:leftText="返回"
+    custom:rightText="转发"
+    custom:rightText1="收藏"
+    custom:mTitle="本专题详情页面"
+    custom:titleTextSize="7sp"/>
+<!-- ImageView -->
+<ImageView
+    android:id="@+id/subject_image"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="5dp"
+    android:src="@drawable/subject"/>
+<!-- Desc-->
+<TextView
+    android:id="@+id/subject_desc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxLines="6"
+    android:textSize="11sp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="6sp"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#66CCFF"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:layout_marginLeft="5dp"
+    android:text="专题文章"/>
+
+<ListView
+    android:id="@+id/spec_article_list"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

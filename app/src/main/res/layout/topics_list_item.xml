@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/master_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="71.2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1.6">
+
+        <ImageView
+            android:id="@+id/topic_listitem_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/topic_list_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="71.2dp"
+        android:layout_weight="9"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic_listitem_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:text="fsajkfjasf'"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/topic_listitem_desc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:text="fsajkfjasf"
+            android:textColor="@color/darkgray"/>
+
+        <TextView
+            android:id="@+id/topic_listitem_num"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="fsajkfjasf"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+</LinearLayout>

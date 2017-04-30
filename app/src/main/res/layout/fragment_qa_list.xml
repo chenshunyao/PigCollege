@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/qa_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_title"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@color/gray_C0C0C0"
+        android:dividerHeight="1px"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false" />
+
+    <TextView
+        android:id="@+id/qa_txt_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:text="@string/error_no_list_data"
+        android:textColor="@color/black_CC000000"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

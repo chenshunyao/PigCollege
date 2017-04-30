@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/master_layout"
+    android:layout_width="84dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <com.xnf.henghenghui.ui.view.RoundImageView
+        android:id="@+id/inner_image"
+	    android:layout_width="64dp"
+	    android:layout_height="64dp"
+		android:src="@drawable/shouyi2"
+	    android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/inner_sign"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/master_sign"
+        android:layout_alignRight="@+id/inner_image"
+        android:layout_alignBottom="@+id/inner_image" />
+    <TextView 
+        android:id="@+id/inner_name"
+        android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/inner_image"
+	    android:layout_centerHorizontal="true"
+	    android:textSize="12sp"
+        android:gravity="center"
+	    android:maxLines="1"
+	    android:ellipsize="end"
+        android:paddingTop="2dp"
+        />
+    <TextView
+        android:id="@+id/inner_duty"
+        android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/inner_name"
+	    android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="2dp"
+	    android:textSize="10sp"
+	    android:textColor="@color/gray"
+        />
+</RelativeLayout>

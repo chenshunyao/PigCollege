@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_note_subject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--文章标题栏目-->
+        <LinearLayout
+            android:id="@+id/main_top_settingbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/main_top_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_bar_background"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/back"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/green_back"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="12.8dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/main_top_ll_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/note_label"
+                    android:textColor="#2c2c2c"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+
+                    <!--分享-->
+                    <LinearLayout
+                        android:id="@+id/fav_course_share"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/fav_course_share_img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/share" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/comment_num_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginRight="12dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/comment_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textSize="10dp"
+                            android:text="100"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/ic_comment"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="5dp"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/comment_list" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/more_pop_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/share_btn" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/pure"></View>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_top_settingbar_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/meeting_comment_send"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/course_detail_comment_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/meeting_comment_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/course_detail_comment_edit_height"
+                android:layout_marginLeft="@dimen/course_detail_comment_edit_leftmargin"
+                android:layout_weight="6"
+                android:background="@drawable/editsharp"
+                android:hint="@string/comment_hint" />
+
+            <Button
+                android:id="@+id/meeting_comment_add"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/course_detail_comment_btnheight"
+                android:layout_marginLeft="@dimen/course_detail_comment_edit_rightmargin"
+                android:layout_weight="1"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/btn_comment_bg"
+                android:text="@string/comment" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

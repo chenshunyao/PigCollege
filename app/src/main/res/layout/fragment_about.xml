@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xnf.henghenghui.ui.view.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/henghenghui" />
+
+        <TextView
+            android:id="@+id/tv_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_5"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            style="@style/h_line"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_check_update"
+            style="@style/option_item_rl">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/update"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pb_loading"
+                    style="@style/loading"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="false"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/tv_henghuisite"
+            style="@style/option_item_rl"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/henghenghui_site"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <View style="@style/h_line" android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/tv_knowmore"
+            style="@style/option_item_rl"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/knowmore"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_16" />
+        </RelativeLayout>
+
+        <View style="@style/h_line"  android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="50dp"
+            android:text="@string/copyright"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+</com.xnf.henghenghui.ui.view.CustomerScrollView>

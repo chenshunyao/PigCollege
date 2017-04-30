@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hot_subject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xnf.henghenghui.ui.activities.HotSubjectActivity">
+
+    <!--文章标题栏目-->
+    <LinearLayout
+        android:id="@+id/main_top_settingbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_top_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_bar_background"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/green_back"
+                    android:textSize="12.8dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/main_top_ll_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/article_label"
+                android:textColor="#2c2c2c"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical|right">
+
+                <TextView
+                    android:id="@+id/all_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/title_dot_right"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pure"></View>
+    </LinearLayout>
+
+    <!--文章正文-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="文章标题"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:text="作者"
+            android:textSize="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/subject_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="10"
+                android:text="三十而立”一般指“30岁人应该能独立 承担自己应承受的责任，并确定自己的人生目标与发展方向”。而对于李曼养猪大会来说，三十年的风雨兼程，行业、企业高度认可的背后是始终践行“为世界养猪业提供科学为本的解决方案”的发展信念。"
+                android:textSize="14dp" />
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/article_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/banaer_test" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pure" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/zan_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="赞"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/pure"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:id="@+id/favorite_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="收藏"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/pure"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:id="@+id/share_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分享"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pure" />
+
+        <TextView
+            android:id="@+id/subject_expand"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|left"
+            android:text="评论"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/pure" />
+
+        <FrameLayout
+            android:id="@+id/article_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!--<include layout="@layout/fragment_loading" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<include
+                    android:id="@+id/meeting_comment_title"
+                    layout="@layout/meeting_title_layout" />-->
+
+                <ListView
+                    android:id="@+id/meeting_comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/meeting_comment_send" />
+
+                <LinearLayout
+                    android:id="@+id/meeting_comment_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/course_detail_comment_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/course_detail_comment_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/meeting_comment_text"
+                        android:layout_width="@dimen/course_detail_comment_edit_width"
+                        android:layout_height="@dimen/course_detail_comment_edit_height"
+                        android:layout_marginLeft="@dimen/course_detail_comment_edit_leftmargin"
+                        android:background="@drawable/editsharp"
+                        android:hint="@string/comment_hint" />
+
+                    <Button
+                        android:id="@+id/meeting_comment_add"
+                        android:layout_width="@dimen/course_detail_comment_btnwidth"
+                        android:layout_height="@dimen/course_detail_comment_btnheight"
+                        android:layout_marginLeft="@dimen/course_detail_comment_edit_rightmargin"
+                        android:background="@drawable/btn_comment_bg"
+                        android:text="@string/comment" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

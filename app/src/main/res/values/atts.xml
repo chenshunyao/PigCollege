@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTopBar">
+        <attr name="mTitle" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="leftText" format="string"/>
+        <attr name="leftBackground" format="reference|color"/>
+        <attr name="rightText" format="string"/>
+        <attr name="rightText1" format="string"/>
+        <attr name="rightBackground" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="slidingBlock" format="reference|color"/>
+        <attr name="allowWidthFull" format="boolean"/>
+        <attr name="disableViewPager" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="PullListView">
+        <attr name="getMoreType">
+            <enum name="auto" value="0" />
+            <enum name="click" value="1" />
+        </attr>
+        <attr name="addPullHeaderByUser" format="boolean" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+
+        <attr name="imgWidth" format="dimension"/>
+        <attr name="imgHeight" format="dimension"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+
+    </declare-styleable>
+
+</resources>

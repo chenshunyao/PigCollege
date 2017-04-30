@@ -1,0 +1,63 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="hot_course_horizontal_height">96dp</dimen>
+	<dimen name="hot_course_horizontal_width">310dp</dimen>
+	<dimen name="hot_course_more_width">30dp</dimen>
+	<dimen name="course_hot_left_fling_width">13dp</dimen>
+	<dimen name="course_margin_left">10dp</dimen>
+	<dimen name="free_course_gridview_column_width">169dp</dimen>
+	<dimen name="course_info_height">33dp</dimen>
+	<dimen name="course_title_spsize">13sp</dimen>
+	<dimen name="play_time_spsize">10sp</dimen>
+	<dimen name="course_price_spsize">12sp</dimen>
+	<dimen name="course_line_label_height">13dp</dimen>
+	<dimen name="course_line_label_width">2dp</dimen>
+	<dimen name="course_line_label_marginleft">16dp</dimen>
+	<dimen name="course_margin_top">6dp</dimen>
+	<dimen name="course_column_margin">3dp</dimen>
+	<dimen name="course_detail_title_height">50dp</dimen>
+	<dimen name="course_detail_zhan_height">48dp</dimen>
+	<dimen name="course_detail_desc_height">69dp</dimen>
+	<dimen name="course_detail_extend_height">30dp</dimen>
+	<dimen name="course_expert_title_height">33dp</dimen>
+	<dimen name="course_expert_info_height">58dp</dimen>
+	<dimen name="course_detail_comment_list_height">195dp</dimen>
+	<dimen name="course_detail_comment_edit_height">37dp</dimen>
+	<dimen name="course_detail_comment_edit_width">288.5dp</dimen>
+	<dimen name="course_detail_comment_edit_leftmargin">10dp</dimen>
+	<dimen name="course_detail_comment_edit_rightmargin">6dp</dimen>
+	<dimen name="course_detail_comment_height">50dp</dimen>
+	<dimen name="course_detail_comment_btnheight">37dp</dimen>
+	<dimen name="course_detail_comment_btnwidth">51dp</dimen>
+	<dimen name="course_comment_item_height">66dp</dimen>
+	<dimen name="course_expert_height">28dp</dimen>
+	<dimen name="meeting_title_height">30dp</dimen>
+	<dimen name="meeting_detail_status_font">12sp</dimen>
+	<dimen name="meeting_live_extend_height">37dp</dimen>
+	<dimen name="compere_image_height">38dp</dimen>
+	<dimen name="live_conference_time">34dp</dimen>
+	<dimen name="compere_name_font_size">17sp</dimen>
+	<dimen name="compere_content_font_size">14sp</dimen>
+	<dimen name="compere_upload_image_height">63dp</dimen>
+	<dimen name="compere_upload_image_width">102dp</dimen>
+	<dimen name="compere_image_magrin_right">3dp</dimen>
+	<dimen name="meetinig_detail_img_height">207dp</dimen>
+	<dimen name="meeting_detail_title1_font_size">19sp</dimen>
+	<dimen name="meeting_detail_place_font_size">12sp</dimen>
+	<dimen name="meeting_detail_info_height">100dp</dimen>
+	<dimen name="meeting_detail_attention_height">48dp</dimen>
+	<dimen name="meeting_detail_attention_font_size">15sp</dimen>
+	<dimen name="meeting_detail_desc_font_size">14sp</dimen>
+	<dimen name="meeting_detail_desc_height">37dp</dimen>
+	<dimen name="course_img_width">153dp</dimen>
+	<dimen name="course_item_layout_width">169dp</dimen>
+	<dimen name="meeting_icon_height">150dp</dimen>
+	<dimen name="meeting_status_width">47dp</dimen>
+	<dimen name="meeting_status_height">19dp</dimen>
+	<dimen name="meeting_status_font_size">10sp</dimen>
+	<dimen name="meeting_title_area_height">90dp</dimen>
+	<dimen name="meeting_detail_tab_height">44dp</dimen>
+	<dimen name="course_line_label_marginright">2dp</dimen>
+</resources>
